@@ -1,0 +1,511 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    src: url(../fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    src: url(../fonts/DMSans-Bold.ttf);
+}
+
+.pixel_perfect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    /* filter: invert(1); */
+display: none;
+}
+
+.pixel_perfect_div {
+    position: relative;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.list_reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #191919;
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: 'DM Sans';
+    color: #FFFFFF;
+}
+
+.main_container {
+    padding: 0 70px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 50px;
+    margin-bottom: 40px;
+}
+
+.header_logo {
+    width: 160px;
+    height: 33px;
+}
+
+.header_logo_img {}
+
+.header_nav {
+    width: 403px;
+    height: 67px;
+}
+
+.nav_list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    line-height: 27px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav_item:last-child {
+    font-size: 17.7px;
+}
+
+.nav_item:first-child {
+    color: #118DA8;
+}
+
+.nav_item:hover {
+    color: #118DA8;
+}
+
+/* Hero */
+
+.hero_container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+.hero_img {
+    width: 50%;
+    position: relative;
+}
+
+.hero_3_lines {
+    position: absolute;
+    top: -26px;
+    left: -26px;
+}
+
+.hero_content {
+    padding-left: 4.16vw;
+    width: 50%;
+}
+
+.hero_title {
+    font-family: DM Sans;
+    font-size: 4.86vw;
+    font-weight: 400;
+    line-height: 6.11vw;
+    letter-spacing: 3.2px;
+    margin: 0;
+}
+
+.hero_title_next {
+    font-size: 5.20vw;
+    position: relative;
+}
+
+.hero_title_next::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../img/underline_for_Next.svg);
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_title_level {
+    font-size: 5.55vw;
+    letter-spacing: 2.7px;
+    font-weight: 700;
+}
+
+.hero_caption {
+    width: 289px;
+    height: 72px;
+    padding: 6.04vw 1.52vw 15.97vw 1.52vw;
+
+}
+
+.hero_caption_text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.hero_social {}
+
+.hero_social_item {
+    width: 32px;
+    height: 32px;
+    margin-right: 13px;
+    display: inline-block;
+}
+
+/* Episodes */
+
+.episodes {
+}
+.episodes_container {
+
+}
+.episodes_caption {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    height: 90px;
+    align-items: center;
+}
+.episodes_title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    margin: 0;
+    top: -17px;
+    position: relative;
+}
+.episodes_caption_button {
+    width: 178px;
+    height: 51px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    background-color: #118DA8;
+    color: #fff;
+    border: 0;
+    padding: 0;
+}
+.episodes_all_items {
+    margin-bottom: 271px;
+}
+.episodes_item {
+    display: flex;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: #000000;
+    margin-bottom: 55px;
+    max-height: 545px;
+}
+
+.episodes_item_img {
+    width: 100%;
+    max-width: 389px;
+}
+.episodes_item_content {
+    padding-left: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 831px;
+}
+.episodes_item_tag {
+    font-size: 18.7px;
+    line-height: 27px;
+    border-radius: 6px;
+    background-color: #191919;
+    text-align: center;
+    display: inline-block;
+    padding: 0 16px;
+    height: 27px;
+    position: relative;
+    top: 8px;
+}
+.episodes_number {
+    line-height: 27px;
+    color: #118DA8;
+    font-size: 17px;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+.episodes_number_id {
+    font-size: 17.7px;
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+}
+.episodes_item_title {
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: 2.46px;
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    top: 14px;
+}
+.item_2 {
+    position: relative;
+    top: 5px;
+    max-height: 511px;
+}
+.item_2 .episodes_item_title  {
+    max-width: 685px;
+}
+.item_2 .episodes_item_tag {
+    font-size: 17px;
+    padding: 0px 21px;
+    padding-left: 16px;
+    top: 8px;
+}
+.item_3 {
+    position: relative;
+    top: 11px;
+    max-height: 512px;
+}
+.item_3 .episodes_item_title  {
+        font-size: 56.8px;
+}
+
+.episodes_item_description {
+    font-size: 21.9px;
+    line-height: 33px;
+    color: #FFFFFFB2;
+    margin: 0;
+    position: relative;
+    top: 11px;
+}
+.episodes_item_button {
+    width: 208px;
+    height: 51px;
+    background-color: #118DA8;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 0;
+    position: relative;
+    top: 1px;
+    padding-left: 12px;
+}
+
+/* Author */
+
+.autor_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    margin-bottom: 196px;
+}
+.author_content {
+    max-width: 650px;
+    padding-right: 44px;
+    position: relative;
+    top: 148px;
+}
+.author_link {
+    width: 112px;
+}
+.author_caption {
+font-size: 18px;
+line-height: 27px;
+color: #118DA8;
+position: relative;
+top: 16px;
+}
+.author_title {
+font-size: 65px;
+font-weight: 400;
+line-height: 79.2px;
+letter-spacing: 2.88px;
+color: #FFFFFF;
+margin: 0;
+    position: relative;
+    top: 14px;
+}
+.author_description {
+font-size: 22px;
+font-weight: 400;
+line-height: 33px;
+margin: 0;
+position: relative;
+top: 42px;
+margin-bottom: 33px;
+
+}
+.author_img {
+    grid-row: span 5;
+}
+
+/* Subscribe */
+
+.subscribe {
+}
+.subscribe_container {
+    display: flex;
+    border-radius: 32px;
+    background-color: #000000;
+    padding: 30px;
+    height: 387px;
+}
+.subscribe_title_box {
+    position: relative;
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 106px;
+}
+.subscribe_caption {
+    font-family: DM Sans;
+font-size: 18px;
+line-height: 27px;
+color: #118DA8;
+position: relative;
+    top: 30px;
+
+}
+.subscribe_title {
+    font-size: 72px;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    top: 28px;
+}
+.subscribe_decor {
+    position: absolute;
+    left: -68px;
+    bottom: -56px;
+}
+.subscribe_content {
+}
+.subscribe_form {
+    padding-left: 68px;
+    padding-top: 30px;
+}
+
+.subscribe_form input {
+    background-color: #191919;
+    border: 1px solid #191919;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #FFFFFFB2;
+    width: 522px;
+    height: 82px;
+    border-radius: 6px;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+.subscribe_form_submit input {
+    width: 87px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 14.8px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #FFFFFFB2;
+    background-color: #118DA8;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 3px;
+    padding-top: 1px;
+    border: 0;
+}
+
+
+
+
+/* Media */
+
+@media screen and (min-width: 1440px) {
+
+    .hero_content {
+        padding-left: 60px;
+    }
+
+    .hero_title {
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 3.2px;
+
+    }
+
+    .hero_title_next {
+        font-size: 75px;
+    }
+
+
+    .hero_title_level {
+        font-size: 80px;
+    }
+
+    .hero_caption {
+        padding: 84px 22px 230px 22px;
+    
+    }
+
+}
+
+    /* @media screen and (max-width: 1030px) {
+
+    .hero_content {
+        padding-left: 30px;
+    }
+
+.hero_title {
+        font-size: 50px;
+
+    }
+
+    .hero_title_next {
+        font-size: 55px;
+    }
+
+
+    .hero_title_level {
+        font-size: 60px;
+    }
+
+    .hero_caption {
+        padding: 30px 22px 130px 22px;
+    }
+} */
