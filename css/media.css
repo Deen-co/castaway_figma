@@ -1,0 +1,147 @@
+/* Media */
+
+@media screen and (min-width: 1440px) {
+    /* Hero */
+    .hero_content {
+        padding-left: 60px;
+    }
+
+    .hero_title {
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 3.2px;
+
+    }
+
+    .hero_title_next {
+        font-size: 75px;
+        top: -2px;
+    }
+
+
+    .hero_title_level {
+        font-size: 80px;
+    }
+
+    .hero_caption {
+        padding: 84px 22px 230px 22px;
+
+    }
+
+    /* Episodes */
+
+.episodes_title {
+    font-size: 4.44vw;
+    line-height: 5.5vw;
+    letter-spacing: 0.2vw;
+}
+
+
+.episodes_item {
+
+    padding: 2.77vw;
+
+
+    margin-bottom: 3.82vw;
+
+}
+
+.episodes_item_img {
+    width: 100%;
+    max-width: 27.01vw;
+}
+
+.episodes_item_content {
+    padding-left: 3.68vw;
+    max-width: 57.71vw;
+}
+
+/* .episodes_item_tag {
+    font-size: 18.7px;
+    line-height: 27px;
+
+    padding: 0 16px;
+} */
+
+.episodes_number {
+
+    top: 1.73vw;
+}
+
+/* .episodes_number_id {
+    font-size: 17.7px;
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+} */
+
+.episodes_item_title {
+    font-size: 4.44vw;
+    line-height: 4.88vw;
+    letter-spacing: 0.17vw;
+    top: 0.97vw;
+}
+
+.item_2 {
+    position: relative;
+    top: 0.35vw;
+    max-height: 35.47vw;
+}
+
+.item_2 .episodes_item_title {
+    max-width: 685px;
+    line-height: 4.86vw;
+}
+
+/* .item_2 .episodes_item_tag {
+    font-size: 17px;
+    padding: 0px 21px;
+    padding-left: 16px;
+    top: 8px;
+} */
+
+
+.item_3 {
+    position: relative;
+    top: 0.76vw;
+    max-height: 35.55vw;
+}
+
+.item_3 .episodes_item_title {
+    font-size: 3.94vw;
+    letter-spacing: 0.18vw;
+}
+
+.episodes_item_description {
+    font-size: 1.52vw;
+    line-height: 2.29vw;
+    position: relative;
+    top: 0.83vw;
+}
+
+}
+
+/* @media screen and (max-width: 1030px) {
+
+    .hero_content {
+        padding-left: 30px;
+    }
+
+.hero_title {
+        font-size: 50px;
+
+    }
+
+    .hero_title_next {
+        font-size: 55px;
+    }
+
+
+    .hero_title_level {
+        font-size: 60px;
+    }
+
+    .hero_caption {
+        padding: 30px 22px 130px 22px;
+    }
+} */

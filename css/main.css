@@ -20,20 +20,18 @@ html {
     src: url(../fonts/DMSans-Bold.ttf);
 }
 
+.pixel_perfect_div {
+    position: relative;
+}
+
 .pixel_perfect {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0.5;
     /* filter: invert(1); */
-display: none;
+    display: none;
 }
-
-.pixel_perfect_div {
-    position: relative;
-}
-
-
 
 img {
     max-width: 100%;
@@ -155,8 +153,8 @@ body {
     background-image: url(../img/underline_for_Next.svg);
     height: 11px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-size: contain;
 }
 
 .hero_title_level {
@@ -190,11 +188,6 @@ body {
 
 /* Episodes */
 
-.episodes {
-}
-.episodes_container {
-
-}
 .episodes_caption {
     display: flex;
     justify-content: space-between;
@@ -202,6 +195,7 @@ body {
     height: 90px;
     align-items: center;
 }
+
 .episodes_title {
     font-weight: 400;
     font-size: 64px;
@@ -211,21 +205,34 @@ body {
     top: -17px;
     position: relative;
 }
+
 .episodes_caption_button {
     width: 178px;
     height: 51px;
-    border-radius: 6px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 27px;
+    text-align: center;
     background-color: #118DA8;
-    color: #fff;
-    border: 0;
-    padding: 0;
+    border-radius: 6px;
+    transition: 0.3s;
 }
+
+.episodes_caption_button a {
+    display: inline-block;
+    position: relative;
+    right: 1px; /* Костыль для Perfect Pixel */
+    font-size: 17px;
+    width: 100%;
+    line-height: 51px;
+}
+
+.episodes_caption_button:hover {
+    background-color: #118da87a;
+    transition: 0.3s;
+}
+
 .episodes_all_items {
     margin-bottom: 271px;
 }
+
 .episodes_item {
     display: flex;
     padding: 40px;
@@ -239,6 +246,7 @@ body {
     width: 100%;
     max-width: 389px;
 }
+
 .episodes_item_content {
     padding-left: 53px;
     display: flex;
@@ -246,6 +254,7 @@ body {
     align-content: space-between;
     max-width: 831px;
 }
+
 .episodes_item_tag {
     font-size: 18.7px;
     line-height: 27px;
@@ -258,6 +267,7 @@ body {
     position: relative;
     top: 8px;
 }
+
 .episodes_number {
     line-height: 27px;
     color: #118DA8;
@@ -266,12 +276,14 @@ body {
     position: relative;
     top: 25px;
 }
+
 .episodes_number_id {
     font-size: 17.7px;
     margin-left: 4px;
     position: relative;
     top: 1px;
 }
+
 .episodes_item_title {
     font-size: 64px;
     line-height: 70.4px;
@@ -281,27 +293,39 @@ body {
     position: relative;
     top: 14px;
 }
+
 .item_2 {
     position: relative;
     top: 5px;
     max-height: 511px;
 }
-.item_2 .episodes_item_title  {
+
+.item_2 .episodes_item_title {
     max-width: 685px;
+    line-height: 70px;
 }
+
 .item_2 .episodes_item_tag {
     font-size: 17px;
     padding: 0px 21px;
     padding-left: 16px;
     top: 8px;
 }
+
+.item_2 .episodes_item_button {
+    position: relative;
+    top: 1px;
+}
+
 .item_3 {
     position: relative;
     top: 11px;
     max-height: 512px;
 }
-.item_3 .episodes_item_title  {
-        font-size: 56.8px;
+
+.item_3 .episodes_item_title {
+    font-size: 56.8px;
+    letter-spacing: 2.66px;
 }
 
 .episodes_item_description {
@@ -310,20 +334,33 @@ body {
     color: #FFFFFFB2;
     margin: 0;
     position: relative;
-    top: 11px;
+    top: 12px;
 }
+
 .episodes_item_button {
     width: 208px;
     height: 51px;
     background-color: #118DA8;
     border-radius: 6px;
-    font-size: 18px;
-    line-height: 27px;
     color: #FFFFFF;
-    border: 0;
+    transition: 0.3s;
+    align-content: center;
+}
+
+.episodes_item_button a {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 51px;
+    text-align: center;
     position: relative;
+    left: 3px;
     top: 1px;
-    padding-left: 12px;
+}
+
+.episodes_item_button:hover {
+    background-color: #118da87a;
+    transition: 0.3s;
 }
 
 /* Author */
@@ -334,72 +371,82 @@ body {
     grid-template-rows: repeat(5, auto);
     margin-bottom: 196px;
 }
+
 .author_content {
     max-width: 650px;
     padding-right: 44px;
     position: relative;
     top: 148px;
 }
+
 .author_link {
     width: 112px;
 }
+
 .author_caption {
-font-size: 18px;
-line-height: 27px;
-color: #118DA8;
-position: relative;
-top: 16px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #118DA8;
+    position: relative;
+    top: 16px;
 }
+
 .author_title {
-font-size: 65px;
-font-weight: 400;
-line-height: 79.2px;
-letter-spacing: 2.88px;
-color: #FFFFFF;
-margin: 0;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    margin: 0;
     position: relative;
     top: 14px;
 }
+
 .author_description {
-font-size: 22px;
-font-weight: 400;
-line-height: 33px;
-margin: 0;
-position: relative;
-top: 42px;
-margin-bottom: 33px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 0;
+    position: relative;
+    top: 42px;
+    margin-bottom: 33px;
 
 }
+
 .author_img {
     grid-row: span 5;
 }
 
 /* Subscribe */
 
-.subscribe {
-}
+.subscribe {}
+
 .subscribe_container {
     display: flex;
     border-radius: 32px;
     background-color: #000000;
     padding: 30px;
     height: 387px;
+    margin-bottom: 200px;
 }
+
 .subscribe_title_box {
     position: relative;
     width: 50%;
     padding-left: 30px;
     padding-right: 106px;
 }
+
 .subscribe_caption {
     font-family: DM Sans;
-font-size: 18px;
-line-height: 27px;
-color: #118DA8;
-position: relative;
+    font-size: 18px;
+    line-height: 27px;
+    color: #118DA8;
+    position: relative;
     top: 30px;
 
 }
+
 .subscribe_title {
     font-size: 72px;
     line-height: 79.2px;
@@ -410,13 +457,15 @@ position: relative;
     position: relative;
     top: 28px;
 }
+
 .subscribe_decor {
     position: absolute;
     left: -68px;
     bottom: -56px;
 }
-.subscribe_content {
-}
+
+.subscribe_content {}
+
 .subscribe_form {
     padding-left: 68px;
     padding-top: 30px;
@@ -434,6 +483,7 @@ position: relative;
     padding-left: 18px;
     margin-bottom: 20px;
 }
+
 .subscribe_form_submit input {
     width: 87px;
     height: 48px;
@@ -451,61 +501,127 @@ position: relative;
     border: 0;
 }
 
+.subscribe_form_submit input:hover {
+    color: #118DA8;
+    background-color: #FFFFFFB2;
+    transition: 0.3s;
+}
 
+/* Reviews */
 
+.reviews {}
 
-/* Media */
+.reviews_container {
+    display: grid;
+    grid-template-columns: repeat(3, 423px);
+    grid-template-rows: 321px 364px;
+    gap: 16px;
+    margin-bottom: 200px;
+}
 
-@media screen and (min-width: 1440px) {
+.reviews_item {
+    padding: 50.5px;
+    ;
+    background-color: #000000;
+    border-radius: 32px;
+}
 
-    .hero_content {
-        padding-left: 60px;
-    }
+.reviews_item_3 {
+    position: relative;
+    left: -1px;
+}
 
-    .hero_title {
-        font-size: 70px;
-        line-height: 88px;
-        letter-spacing: 3.2px;
+.reviews_item_6 {
+    position: relative;
+    left: -1px;
+}
 
-    }
-
-    .hero_title_next {
-        font-size: 75px;
-    }
-
-
-    .hero_title_level {
-        font-size: 80px;
-    }
-
-    .hero_caption {
-        padding: 84px 22px 230px 22px;
-    
-    }
+.reviews_stars {
+    background-image: url(../img/stars.svg);
+    background-repeat: space;
+    background-size: contain;
+    background-position: center;
+    width: 110px;
+    height: 18px;
+    margin-top: 3px;
 
 }
 
-    /* @media screen and (max-width: 1030px) {
+.reviews_comment {
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #FFFFFF;
+    margin-top: 21px;
+}
 
-    .hero_content {
-        padding-left: 30px;
-    }
+.reviews_item_5 .reviews_comment {
+    font-size: 35px;
+}
 
-.hero_title {
-        font-size: 50px;
+.comment_author {
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #FFFFFFB2;
+    margin-top: 20px;
+}
 
-    }
+.reviews_item_5 .comment_author,
+.reviews_item_6 .comment_author {
+    font-size: 23px;
+}
 
-    .hero_title_next {
-        font-size: 55px;
-    }
+/* Footer */
 
+.footer {
+    display: flex;
+    padding: 0 70px;
+    justify-content: flex-start;
+    margin-bottom: 120px;
+}
 
-    .hero_title_level {
-        font-size: 60px;
-    }
+.footer_main {
+    width: 35.6%;
+}
 
-    .hero_caption {
-        padding: 30px 22px 130px 22px;
-    }
-} */
+.footer_logo {
+    margin-bottom: 23px;
+    width: 224px;
+    height: 46px;
+}
+
+.footer_share {}
+
+.share_icon {
+    margin-right: 6px;
+}
+.share_icon:hover {
+    color: #118DA8;
+}
+
+.footer_pages_1 {
+    width: 15%;
+}
+
+.footer_link {
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.footer_link:hover {
+    color: #118DA8;
+}
+
+.footer_link_font {
+    font-size: 18px;
+}
+
+.footer_pages_2 {
+    width: 15%;
+}
+
+.footer_social {}
+
+.hero_social {}
+
+.hero_social_item {}
