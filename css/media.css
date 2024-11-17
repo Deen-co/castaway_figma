@@ -1,7 +1,12 @@
 /* Media */
 
 @media screen and (min-width: 1440px) {
+
     /* Hero */
+    .hero_container {
+        margin-bottom: 100px;
+    }
+
     .hero_content {
         padding-left: 60px;
     }
@@ -29,95 +34,280 @@
     }
 
     /* Episodes */
+    .episodes_caption {
+        margin-bottom: 45px;
+        height: 90px;
+    }
 
-.episodes_title {
-    font-size: 4.44vw;
-    line-height: 5.5vw;
-    letter-spacing: 0.2vw;
-}
+    .episodes_title {
+        font-size: 64px;
+        line-height: 79.2px;
+        letter-spacing: 2.88px;
+        top: -17px;
+    }
 
+    .episodes_caption_button {
+        width: 178px;
+        height: 51px;
+    }
 
-.episodes_item {
+    .episodes_caption_button a {
+        right: 1px;
+        /* Костыль для Perfect Pixel */
+        font-size: 17px;
+        line-height: 51px;
+    }
 
-    padding: 2.77vw;
+    .episodes_all_items {
+        margin-bottom: 271px;
+    }
 
+    .episodes_item {
+        padding: 40px;
+        margin-bottom: 55px;
+    }
 
-    margin-bottom: 3.82vw;
+    .episodes_item_img {
+        width: 389px;
+        min-width: 389px;
+        max-width: 389px;
+    }
 
-}
+    .episodes_item_content {
+        padding-left: 53px;
+        max-width: 831px;
+    }
 
-.episodes_item_img {
-    width: 100%;
-    max-width: 27.01vw;
-}
+    .episodes_item_tag {
+        font-size: 18.7px;
+        line-height: 27px;
+        padding: 0 16px;
+        top: 8px;
+    }
 
-.episodes_item_content {
-    padding-left: 3.68vw;
-    max-width: 57.71vw;
-}
+    .episodes_number {
+        top: 25px;
+        font-size: 17px;
+        line-height: 27px;
+    }
 
-/* .episodes_item_tag {
-    font-size: 18.7px;
-    line-height: 27px;
+    .episodes_number_id {
+        font-size: 17.7px;
+        top: 1px;
+    }
 
-    padding: 0 16px;
-} */
+    .episodes_item_title {
+        font-size: 64px;
+        line-height: 70.4px;
+        letter-spacing: 2.46px;
+        top: 14px;
+    }
 
-.episodes_number {
+    .item_2 {
+        top: 5px;
+        max-height: 511px;
+    }
 
-    top: 1.73vw;
-}
+    .item_2 .episodes_item_title {
+        max-width: 685px;
+        line-height: 70px;
+    }
 
-/* .episodes_number_id {
-    font-size: 17.7px;
-    margin-left: 4px;
-    position: relative;
-    top: 1px;
-} */
+    .item_2 .episodes_item_tag {
+        font-size: 17px;
+        padding: 0px 21px;
+        padding-left: 16px;
+        top: 8px;
+    }
 
-.episodes_item_title {
-    font-size: 4.44vw;
-    line-height: 4.88vw;
-    letter-spacing: 0.17vw;
-    top: 0.97vw;
-}
+    .item_3 {
+        top: 11px;
+        max-height: 512px;
+    }
 
-.item_2 {
-    position: relative;
-    top: 0.35vw;
-    max-height: 35.47vw;
-}
+    .item_3 .episodes_item_title {
+        font-size: 56.8px;
+        letter-spacing: 2.66px;
+    }
 
-.item_2 .episodes_item_title {
-    max-width: 685px;
-    line-height: 4.86vw;
-}
+    .episodes_item_description {
+        font-size: 21.9px;
+        line-height: 33px;
+        top: 12px;
+    }
 
-/* .item_2 .episodes_item_tag {
-    font-size: 17px;
-    padding: 0px 21px;
-    padding-left: 16px;
-    top: 8px;
-} */
+    .episodes_item_button {
+        width: 208px;
+        height: 51px;
 
+    }
 
-.item_3 {
-    position: relative;
-    top: 0.76vw;
-    max-height: 35.55vw;
-}
+    .episodes_item_button a {
 
-.item_3 .episodes_item_title {
-    font-size: 3.94vw;
-    letter-spacing: 0.18vw;
-}
+        font-size: 18px;
+        line-height: 51px;
 
-.episodes_item_description {
-    font-size: 1.52vw;
-    line-height: 2.29vw;
-    position: relative;
-    top: 0.83vw;
-}
+        left: 3px;
+        top: 1px;
+    }
+
+    /* Author */
+
+    .autor_container {
+        margin-bottom: 196px;
+    }
+
+    .author_content {
+        max-width: 650px;
+        padding-right: 44px;
+        top: 148px;
+    }
+
+    .author_link {
+        width: 112px;
+    }
+
+    .author_caption {
+        font-size: 18px;
+        line-height: 27px;
+        top: 16px;
+    }
+
+    .author_title {
+        font-size: 65px;
+        line-height: 79.2px;
+        letter-spacing: 2.88px;
+        top: 14px;
+    }
+
+    .author_description {
+        font-size: 22px;
+        line-height: 33px;
+        top: 42px;
+        margin-bottom: 33px;
+    }
+
+    .author_img {
+        grid-row: span 5;
+    }
+
+    /* Subscribe */
+
+    .subscribe_container {
+        padding: 30px;
+        height: 387px;
+        margin-bottom: 200px;
+    }
+
+    .subscribe_title_box {
+        padding-left: 30px;
+        padding-right: 106px;
+    }
+
+    .subscribe_caption {
+        font-size: 18px;
+        line-height: 27px;
+        top: 30px;
+
+    }
+
+    .subscribe_title {
+        font-size: 72px;
+        line-height: 79.2px;
+        letter-spacing: 2.88px;
+        top: 28px;
+    }
+
+    .subscribe_decor {
+        left: -68px;
+        bottom: -56px;
+        width: auto;
+    }
+
+    .subscribe_form {
+        padding-left: 68px;
+        padding-top: 30px;
+    }
+
+    .subscribe_form input {
+        font-size: 24px;
+        line-height: 28.8px;
+        width: 522px;
+        height: 82px;
+        border-radius: 6px;
+        padding-left: 18px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe_form_submit input {
+        width: 87px;
+        height: 48px;
+        font-size: 14.8px;
+        line-height: 28.8px;
+        padding-left: 3px;
+        padding-top: 1px;
+    }
+
+    .subscribe_form_submit input:hover {
+        color: #118DA8;
+        background-color: #FFFFFFB2;
+        transition: 0.3s;
+    }
+
+    /* Reviews */
+
+    .reviews_container {
+        grid-template-columns: repeat(3, 423px);
+        grid-template-rows: 321px 364px;
+        gap: 16px;
+        margin-bottom: 200px;
+    }
+
+    .reviews_item {
+        padding: 50.5px;
+        border-radius: 32px;
+    }
+
+    .reviews_item_3 {
+        left: -1px;
+    }
+
+    .reviews_item_6 {
+        left: -1px;
+    }
+
+    .reviews_stars {
+        width: 110px;
+        height: 18px;
+        margin-top: 3px;
+
+    }
+
+    .reviews_comment {
+        font-size: 36px;
+        line-height: 43.2px;
+        margin-top: 21px;
+    }
+
+    .reviews_item_5 .reviews_comment {
+        font-size: 35px;
+    }
+
+    .comment_author {
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-top: 20px;
+    }
+
+    .reviews_item_5 .comment_author,
+    .reviews_item_6 .comment_author {
+        font-size: 23px;
+    }
+
+    .reviews_item_6 .reviews_comment {
+        font-size: 36px;
+        line-height: 43.2px;
+    }
 
 }
 

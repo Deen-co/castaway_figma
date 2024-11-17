@@ -111,7 +111,7 @@ body {
 .hero_container {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 6.94vw;
 }
 
 .hero_img {
@@ -177,8 +177,6 @@ body {
     margin-bottom: 16px;
 }
 
-.hero_social {}
-
 .hero_social_item {
     width: 32px;
     height: 32px;
@@ -191,24 +189,24 @@ body {
 .episodes_caption {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
-    height: 90px;
+    margin-bottom: 3.13vw;
+    height: 6.25vw;
     align-items: center;
 }
 
 .episodes_title {
+    font-size: 4.44vw;
+    line-height: 5.5vw;
+    letter-spacing: 0.2vw;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 79.2px;
-    letter-spacing: 2.88px;
     margin: 0;
-    top: -17px;
+    top: -1.18vw;
     position: relative;
 }
 
 .episodes_caption_button {
-    width: 178px;
-    height: 51px;
+    width: 12.36vw;
+    height: 3.54vw;
     text-align: center;
     background-color: #118DA8;
     border-radius: 6px;
@@ -218,10 +216,11 @@ body {
 .episodes_caption_button a {
     display: inline-block;
     position: relative;
-    right: 1px; /* Костыль для Perfect Pixel */
-    font-size: 17px;
+    right: 0.07vw;
+    /* Костыль для Perfect Pixel */
+    font-size: 1.18vw;
     width: 100%;
-    line-height: 51px;
+    line-height: 3.54vw;
 }
 
 .episodes_caption_button:hover {
@@ -230,86 +229,94 @@ body {
 }
 
 .episodes_all_items {
-    margin-bottom: 271px;
+    margin-bottom: 18.82vw;
 }
 
 .episodes_item {
     display: flex;
-    padding: 40px;
+
+    padding: 2.77vw;
     border-radius: 32px;
     background-color: #000000;
-    margin-bottom: 55px;
+
+    margin-bottom: 3.82vw;
     max-height: 545px;
 }
 
 .episodes_item_img {
-    width: 100%;
-    max-width: 389px;
+    width: 27.01vw;
+    max-width: 27.01vw;
+    min-width: 27.01vw;
 }
 
 .episodes_item_content {
-    padding-left: 53px;
+
+    padding-left: 3.68vw;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    max-width: 831px;
+
+    max-width: 57.71vw;
 }
 
 .episodes_item_tag {
-    font-size: 18.7px;
-    line-height: 27px;
+    font-size: 1.30vw;
+    line-height: 1.87vw;
     border-radius: 6px;
     background-color: #191919;
     text-align: center;
     display: inline-block;
-    padding: 0 16px;
-    height: 27px;
+    padding: 0 1.11vw;
     position: relative;
-    top: 8px;
+    top: 0.55vw;
 }
 
 .episodes_number {
-    line-height: 27px;
+    line-height: 1.87vw;
     color: #118DA8;
-    font-size: 17px;
+    font-size: 1.18vw;
     width: 100%;
     position: relative;
-    top: 25px;
+
+    top: 1.73vw;
 }
 
 .episodes_number_id {
-    font-size: 17.7px;
+    font-size: 1.23vw;
     margin-left: 4px;
     position: relative;
-    top: 1px;
+    top: 0.07vw;
 }
 
 .episodes_item_title {
-    font-size: 64px;
-    line-height: 70.4px;
-    letter-spacing: 2.46px;
+
+    font-size: 4.44vw;
+    line-height: 4.88vw;
+    letter-spacing: 0.17vw;
     margin: 0;
     font-weight: 400;
     position: relative;
-    top: 14px;
+
+    top: 0.97vw;
 }
 
 .item_2 {
     position: relative;
-    top: 5px;
-    max-height: 511px;
+
+    top: 0.35vw;
+    max-height: 35.47vw;
 }
 
 .item_2 .episodes_item_title {
+
     max-width: 685px;
-    line-height: 70px;
+    line-height: 4.86vw;
 }
 
 .item_2 .episodes_item_tag {
-    font-size: 17px;
-    padding: 0px 21px;
-    padding-left: 16px;
-    top: 8px;
+    font-size: 1.18vw;
+    padding: 0px 1.45vw;
+    padding-left: 1.11vw;
 }
 
 .item_2 .episodes_item_button {
@@ -319,27 +326,30 @@ body {
 
 .item_3 {
     position: relative;
-    top: 11px;
-    max-height: 512px;
+    top: 0.76vw;
+    max-height: 35.55vw;
 }
 
 .item_3 .episodes_item_title {
-    font-size: 56.8px;
-    letter-spacing: 2.66px;
+
+    font-size: 3.94vw;
+    letter-spacing: 0.18vw;
 }
 
 .episodes_item_description {
-    font-size: 21.9px;
-    line-height: 33px;
+
+    font-size: 1.52vw;
+    line-height: 2.29vw;
     color: #FFFFFFB2;
     margin: 0;
     position: relative;
-    top: 12px;
+
+    top: 0.83vw;
 }
 
 .episodes_item_button {
-    width: 208px;
-    height: 51px;
+    width: 14.44vw;
+    height: 3.54vw;
     background-color: #118DA8;
     border-radius: 6px;
     color: #FFFFFF;
@@ -350,12 +360,12 @@ body {
 .episodes_item_button a {
     display: inline-block;
     width: 100%;
-    font-size: 18px;
-    line-height: 51px;
+    font-size: 1.25vw;
+    line-height: 3.54vw;
     text-align: center;
     position: relative;
-    left: 3px;
-    top: 1px;
+    left: 0.21vw;
+    top: 0.07vw;
 }
 
 .episodes_item_button:hover {
@@ -367,50 +377,49 @@ body {
 
 .autor_container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
-    margin-bottom: 196px;
+    margin-bottom: 13.6vw;
 }
 
 .author_content {
-    max-width: 650px;
-    padding-right: 44px;
+    max-width: 45.14vw;
+    padding-right: 3.05vw;
     position: relative;
-    top: 148px;
+    top: 10.28vw;
 }
 
 .author_link {
-    width: 112px;
+    width: 7.78vw;
 }
 
 .author_caption {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.25vw;
+    line-height: 1.87vw;
     color: #118DA8;
     position: relative;
-    top: 16px;
+    top: 1.11vw;
 }
 
 .author_title {
-    font-size: 65px;
+    font-size: 4.51vw;
     font-weight: 400;
-    line-height: 79.2px;
-    letter-spacing: 2.88px;
+    line-height: 5.5vw;
+    letter-spacing: 0.2vw;
     color: #FFFFFF;
     margin: 0;
     position: relative;
-    top: 14px;
+    top: 0.97vw;
 }
 
 .author_description {
-    font-size: 22px;
+    font-size: 1.52vw;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 2.29vw;
     margin: 0;
     position: relative;
-    top: 42px;
-    margin-bottom: 33px;
-
+    top: 2.92vw;
+    margin-bottom: 2.29vw;
 }
 
 .author_img {
@@ -419,85 +428,81 @@ body {
 
 /* Subscribe */
 
-.subscribe {}
-
 .subscribe_container {
     display: flex;
     border-radius: 32px;
     background-color: #000000;
-    padding: 30px;
-    height: 387px;
-    margin-bottom: 200px;
+    padding: 2.08vw;
+    height: 26.87vw;
+    margin-bottom: 13.89vw;
 }
 
 .subscribe_title_box {
     position: relative;
     width: 50%;
-    padding-left: 30px;
-    padding-right: 106px;
+    padding-left: 2.08vw;
+    padding-right: 7.36vw;
 }
 
 .subscribe_caption {
-    font-family: DM Sans;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.25vw;
+    line-height: 1.87vw;
     color: #118DA8;
     position: relative;
-    top: 30px;
+    top: 2.08vw;
 
 }
 
 .subscribe_title {
-    font-size: 72px;
-    line-height: 79.2px;
-    letter-spacing: 2.88px;
+    font-size: 5vw;
+    line-height: 5.5vw;
+    letter-spacing: 0.2vw;
     color: #FFFFFF;
     margin: 0;
     font-weight: 400;
     position: relative;
-    top: 28px;
+    top: 1.94vw;
 }
 
 .subscribe_decor {
     position: absolute;
-    left: -68px;
-    bottom: -56px;
+    left: -4.72vw;
+    bottom: -3.89vw;
+    width: 10.21vw;
 }
 
-.subscribe_content {}
-
 .subscribe_form {
-    padding-left: 68px;
-    padding-top: 30px;
+    padding-left: 4.72vw;
+    padding-top: 2.08vw;
 }
 
 .subscribe_form input {
     background-color: #191919;
     border: 1px solid #191919;
-    font-size: 24px;
-    line-height: 28.8px;
+    font-size: 1.67vw;
+    line-height: 2vw;
     color: #FFFFFFB2;
-    width: 522px;
-    height: 82px;
+    width: 36.25vw;
+    height: 5.69vw;
     border-radius: 6px;
-    padding-left: 18px;
-    margin-bottom: 20px;
+    padding-left: 1.25vw;
+    margin-bottom: 1.39vw;
 }
 
 .subscribe_form_submit input {
-    width: 87px;
-    height: 48px;
+    width: 6.04vw;
+    height: 3.33vw;
     border-radius: 6px;
-    font-size: 14.8px;
+    font-size: 1.03vw;
     font-weight: 700;
-    line-height: 28.8px;
+    line-height: 2vw;
     color: #FFFFFFB2;
     background-color: #118DA8;
     margin: 0;
     padding: 0;
     position: relative;
-    padding-left: 3px;
-    padding-top: 1px;
+    padding-left: 0.21vw;
+    padding-top: 0.07vw;
     border: 0;
 }
 
@@ -509,31 +514,28 @@ body {
 
 /* Reviews */
 
-.reviews {}
-
 .reviews_container {
     display: grid;
-    grid-template-columns: repeat(3, 423px);
-    grid-template-rows: 321px 364px;
-    gap: 16px;
-    margin-bottom: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 22.29vw 25.28vw;
+    gap: 1.11vw;
+    margin-bottom: 13.9vw;
 }
 
 .reviews_item {
-    padding: 50.5px;
-    ;
+    padding: 3.51vw;
     background-color: #000000;
-    border-radius: 32px;
+    border-radius: 2.22vw;
 }
 
 .reviews_item_3 {
     position: relative;
-    left: -1px;
+    left: -0.07vw;
 }
 
 .reviews_item_6 {
     position: relative;
-    left: -1px;
+    left: -0.07vw;
 }
 
 .reviews_stars {
@@ -541,33 +543,38 @@ body {
     background-repeat: space;
     background-size: contain;
     background-position: center;
-    width: 110px;
-    height: 18px;
-    margin-top: 3px;
+    width: 7.64vw;
+    height: 1.25vw;
+    margin-top: 0.21vw;
 
 }
 
 .reviews_comment {
-    font-size: 36px;
-    line-height: 43.2px;
+    font-size: 2.5vw;
+    line-height: 3vw;
     color: #FFFFFF;
-    margin-top: 21px;
+    margin-top: 1.46vw;
 }
 
 .reviews_item_5 .reviews_comment {
-    font-size: 35px;
+    font-size: 2.43vw;
 }
 
 .comment_author {
-    font-size: 24px;
-    line-height: 28.8px;
+    font-size: 1.67vw;
+    line-height: 2vw;
     color: #FFFFFFB2;
-    margin-top: 20px;
+    margin-top: 1.38vw;
 }
 
 .reviews_item_5 .comment_author,
 .reviews_item_6 .comment_author {
-    font-size: 23px;
+    font-size: 1.6vw;
+}
+
+.reviews_item_6 .reviews_comment {
+    font-size: 2.4vw;
+    line-height: 2.4vw;
 }
 
 /* Footer */
@@ -594,6 +601,7 @@ body {
 .share_icon {
     margin-right: 6px;
 }
+
 .share_icon:hover {
     color: #118DA8;
 }
