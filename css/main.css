@@ -58,7 +58,7 @@ body {
 }
 
 .main_container {
-    padding: 0 70px;
+    padding: 0 4.86vw;
 }
 
 /* Header */
@@ -121,8 +121,9 @@ body {
 
 .hero_3_lines {
     position: absolute;
-    top: -26px;
-    left: -26px;
+    top: -1.8vw;
+    left: -1.8vw;
+    width: 4.72vw;
 }
 
 .hero_content {
@@ -250,12 +251,10 @@ body {
 }
 
 .episodes_item_content {
-
     padding-left: 3.68vw;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-
     max-width: 57.71vw;
 }
 
@@ -378,7 +377,6 @@ body {
 .autor_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
     margin-bottom: 13.6vw;
 }
 
@@ -420,10 +418,6 @@ body {
     position: relative;
     top: 2.92vw;
     margin-bottom: 2.29vw;
-}
-
-.author_img {
-    grid-row: span 5;
 }
 
 /* Subscribe */
@@ -504,6 +498,7 @@ body {
     padding-left: 0.21vw;
     padding-top: 0.07vw;
     border: 0;
+    cursor: pointer;
 }
 
 .subscribe_form_submit input:hover {
@@ -539,13 +534,17 @@ body {
 }
 
 .reviews_stars {
-    background-image: url(../img/stars.svg);
-    background-repeat: space;
-    background-size: contain;
-    background-position: center;
-    width: 7.64vw;
     height: 1.25vw;
-    margin-top: 0.21vw;
+        margin-top: 0.21vw;
+        padding-top: 0.07vw;
+        display: flex;
+}
+
+.reviews_stars div {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    width: 1.6vw;
+    background-size: contain;
 
 }
 
@@ -581,9 +580,9 @@ body {
 
 .footer {
     display: flex;
-    padding: 0 70px;
+    padding: 0 4.86vw;
     justify-content: flex-start;
-    margin-bottom: 120px;
+    margin-bottom: 8.33vw;
 }
 
 .footer_main {
@@ -591,19 +590,21 @@ body {
 }
 
 .footer_logo {
-    margin-bottom: 23px;
-    width: 224px;
-    height: 46px;
+    margin-bottom: 1.6vw;
+    width: 15.55vw;
+    height: 3.19vw;
 }
 
-.footer_share {}
-
 .share_icon {
-    margin-right: 6px;
+    margin-right: 0.42vw;
 }
 
 .share_icon:hover {
     color: #118DA8;
+}
+
+.footer .hero_social_item {
+    margin-right: 0.90vw;
 }
 
 .footer_pages_1 {
@@ -611,9 +612,9 @@ body {
 }
 
 .footer_link {
-    font-size: 17px;
-    line-height: 27px;
-    margin-bottom: 10px;
+    font-size: 1.18vw;
+    line-height: 1.87vw;
+    margin-bottom: 0.69vw;
 }
 
 .footer_link:hover {
@@ -621,15 +622,9 @@ body {
 }
 
 .footer_link_font {
-    font-size: 18px;
+    font-size: 1.25vw;
 }
 
 .footer_pages_2 {
     width: 15%;
 }
-
-.footer_social {}
-
-.hero_social {}
-
-.hero_social_item {}
