@@ -542,9 +542,9 @@ body {
 
 .reviews_stars {
     height: 1.25vw;
-        margin-top: 0.21vw;
-        padding-top: 0.07vw;
-        display: flex;
+    margin-top: 0.21vw;
+    padding-top: 0.07vw;
+    display: flex;
 }
 
 .reviews_stars div {
@@ -573,8 +573,8 @@ body {
     color: #FFFFFFB2;
     margin-top: 1.38vw;
     margin: 0;
-        font-weight: 400;
-        grid-area: 3;
+    font-weight: 400;
+    grid-area: 3;
 }
 
 .reviews_item_5 .comment_author,
