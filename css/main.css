@@ -83,6 +83,10 @@ body {
     height: 67px;
 }
 
+.burger_menu {
+    display: none;
+}
+
 .nav_list {
     display: flex;
     gap: 40px;
