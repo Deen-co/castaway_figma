@@ -277,6 +277,7 @@
     .reviews_item {
         padding: 50.5px;
         border-radius: 32px;
+        gap: 20px;
     }
 
     .reviews_item_3 {
@@ -301,7 +302,6 @@
     .reviews_comment {
         font-size: 36px;
         line-height: 43.2px;
-        margin-top: 21px;
     }
 
     .reviews_item_5 .reviews_comment {
@@ -311,7 +311,6 @@
     .comment_author {
         font-size: 24px;
         line-height: 28.8px;
-        margin-top: 20px;
     }
 
     .reviews_item_5 .comment_author,
@@ -743,6 +742,7 @@
     }
 
     .reviews_item {
+        justify-items: center;
         text-align: center;
     }
 

@@ -525,6 +525,9 @@ body {
     padding: 3.51vw;
     background-color: #000000;
     border-radius: 2.22vw;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1.38vw;
 }
 
 .reviews_item_3 {
@@ -557,6 +560,7 @@ body {
     line-height: 3vw;
     color: #FFFFFF;
     margin-top: 1.46vw;
+    margin: 0;
 }
 
 .reviews_item_5 .reviews_comment {
@@ -568,6 +572,9 @@ body {
     line-height: 2vw;
     color: #FFFFFFB2;
     margin-top: 1.38vw;
+    margin: 0;
+        font-weight: 400;
+        grid-area: 3;
 }
 
 .reviews_item_5 .comment_author,
